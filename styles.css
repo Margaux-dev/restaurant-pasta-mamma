@@ -1,0 +1,530 @@
+/*Background-image by Jonathan Pielmayer from Unsplash : https://unsplash.com/photos/RKJElwIyCQw*/
+
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+	margin-top: 80px;
+	font-family: 'Recursive', sans-serif;
+	background-image: url("https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body::before{
+	content: "";
+	width: 100%;
+	height: calc(100vh - 80px);
+	position: absolute;
+	background-color: rgba(176,127,80,0.30);
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/* HEADER */
+
+header{
+    width: 100vw;
+    height: 90px;
+	padding: 30px 0;
+    position: fixed;
+	top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+	color: #FFFFFF;
+    font-size: 2.2rem;
+	font-weight: 700;
+	z-index: 20;
+	background-image: url("https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+header::before{
+	content: "";
+	position: absolute;
+	width: 100vw;
+	height: 90px;
+	top: 0;
+	background-color: rgba(176,127,80,0.30);
+	z-index: -10;
+}
+
+#header-logo{
+    display: flex;
+    align-items: center;
+	text-transform: uppercase;
+}
+
+#header-logo img{
+	width: 50px;
+	height: auto;
+	margin: -10px 15px 0 0;
+	filter: contrast(0%) brightness(1.67); 
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    margin: 0 40px;
+}
+
+#navbar ul li a{
+	color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+	z-index: 1000;
+}
+
+
+
+/* ACCUEIL */
+
+#accueil{
+    width: 100vw;
+	height: calc(100vh - 80px);
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+#accueil h1{
+	font-size: 10rem;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(77,0,0,1.00);
+}
+
+#accueil h3{
+	margin: 10px 0 20px 0;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 0 0 7px rgba(77,0,0,1.00);
+}
+
+#boutons-accueil{
+	margin: 30px 0;
+    display: flex;
+}
+
+.bouton-accueil{
+	width: 200px;
+	height: 50px;
+	margin: 0 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255,107,0,1.00);
+	border-radius: 25px;
+	color: inherit;
+	font-size: 2.1rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#voir-carte{
+	margin-top: 50px;
+	color: inherit;
+	font-size: 4rem;
+	text-decoration: none;
+}
+
+
+
+/* CARTE */
+
+#carte{
+    width: 100%;
+	height: auto;
+	padding: 90px 25px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+	background-color: #F5E7D3;
+	z-index: 100;
+}
+
+.carte-titre{
+	margin: 10px 0 20px 0;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+#carte-pates, #carte-salades, #carte-desserts, #carte-boissons, #carte-cafes{
+    width: 100%;
+	margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#carte-pates h4, #carte-salades h4, #carte-desserts h4, #carte-boissons h4, #carte-cafes h4{
+   	margin-top: 15px;
+	font-size: 2.2rem;
+}
+
+#carte-pates p, #carte-salades p, #carte-desserts p, #carte-boissons p, #carte-cafes p{
+	font-size: 1.8rem;
+}
+
+#carte-pates h3, #carte-salades h3, #carte-desserts h3, #carte-boissons h3, #carte-cafes h3{
+	font-size: 2rem;
+	text-align: right;
+}
+
+.pates, .salade, .boisson, .dessert, .cafe{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.item{
+	padding-right: 15px;
+}
+
+.carte-ul{
+    width: 38vw;
+	min-width: 300px;
+    margin: 0 5vw;
+}
+
+
+
+/* CONTACT */
+
+footer{
+	width: 100%;
+	height: auto;
+	padding: 40px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: #fff;
+	background-color: rgba(38,35,32,1.00);
+}
+
+footer address{
+	margin: 10px;
+	font-style: normal;
+	text-align: center;
+}
+
+footer address h3, #horaires h3{
+	margin-bottom: 5px;
+	font-size: 2.1rem;
+	text-transform: uppercase;
+}
+
+footer address p, #horaires p{
+	font-size: 1.6rem;
+}
+
+#reseaux-sociaux{
+	margin: 10px;
+	display: flex;
+	grid-gap: 7px;
+}
+
+#reseaux-sociaux a{
+	color: inherit;
+	font-size: 3.1rem;
+	text-decoration: none;
+}
+
+#horaires{
+	margin: 10px;
+	text-align: center;
+}
+
+#newsletter{
+	margin: 10px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#newsletter p{
+	margin-bottom: 5px;
+}
+
+#form-input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+#newsletter input{
+	width: 220px;
+	height: 30px;
+	padding: 0 5px;
+	color: rgba(42,42,42,1.00);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px solid #fff;
+}
+
+#newsletter button{
+	width: 100px;
+	height: 30px;
+	padding: 0 5px;
+	color: #fff;
+	font-family: 'Recursive', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	background-color: rgba(255,107,0,1.00);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgba(255,107,0,1.00);
+	cursor: pointer;
+}
+
+
+
+/* ANIMATIONS */
+
+#navbar ul li a:hover{
+	border-bottom: 2px solid rgba(255,107,0,1.00); 
+}
+
+.bouton-accueil:hover, #newsletter button:hover{
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+#voir-carte:hover{
+	transform: translateY(0);
+	-webkit-animation: iconHover 1s linear infinite;
+	-moz-animation: iconHover 1s linear infinite;
+	animation: iconHover 1s linear infinite;
+}
+
+@-webkit-keyframes iconHover{
+	0%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50%{
+		-webkit-transform: translateY(15px);
+		transform: translateY(15px);
+	}
+	100%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@-moz-keyframes iconHover{
+	0%{
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50%{
+		-moz-transform: translateY(15px);
+		transform: translateY(15px);
+	}
+	100%{
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes iconHover{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(15px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+#reseaux-sociaux a:hover{
+	transform: translateY(0);
+	-webkit-animation: iconsHover 0.8s linear infinite;
+	-moz-animation: iconsHover .8s linear infinite;
+	animation: iconsHover .8s linear infinite;
+}
+
+@-webkit-keyframes iconsHover{
+	0%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50%{
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	100%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@-moz-keyframes iconsHover{
+	0%{
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50%{
+		-moz-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	100%{
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes iconsHover{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-5px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 760px){
+	/* HEADER */
+	header{
+		height: 80px;
+		padding: 5px 0;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.7rem;
+		font-weight: 400;
+	}
+
+	header::before{
+		height: 80px;
+	}
+
+	#header-logo{
+		justify-content: center;
+	}
+
+	#header-logo img{
+		width: 30px;
+		margin: 0;
+	}
+
+	#header-logo h4{
+		display: none;
+	}
+	
+	#navbar ul{
+		display: flex;
+	}
+
+	#navbar ul li{
+		margin: 0 20px;
+	}
+
+	#navbar ul li a{
+		color: inherit;
+		z-index: 1000;
+	}
+
+
+	/* ACCUEIL */
+
+	#accueil{
+		height: calc(100vh - 80px);
+	}
+
+	#accueil h1{
+		font-size: 4rem;
+		text-shadow: 0 0 5px rgba(77,0,0,1.00);
+	}
+
+	#accueil h3{
+		margin: 8px 0;
+		font-size: 2.2rem;
+		text-shadow: 0 0 5px rgba(77,0,0,1.00);
+	}
+
+	#boutons-accueil{
+		margin: 12px 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.bouton-accueil{
+		width: 190px;
+		height: 45px;
+		margin: 8px 0;
+		font-size: 2rem;
+	}
+
+
+	/* CARTE */
+
+	#carte{
+		padding: 80px 15px;
+	}
+
+	.carte-titre{
+		font-size: 2.5rem;
+	}
+
+	#carte-pates, #carte-salades, #carte-desserts, #carte-boissons, #carte-cafes{
+		margin-bottom: 70px;
+		flex-wrap: wrap;
+	}
+
+	#carte-pates h4, #carte-salades h4, #carte-desserts h4, #carte-boissons h4, #carte-cafes h4{
+		margin-top: 20px;
+		font-size: 1.9rem;
+		font-weight: 600;
+	}
+
+	#carte-pates p, #carte-salades p, #carte-desserts p, #carte-boissons p, #carte-cafes p{
+		font-size: 1.6rem;
+	}
+
+	#carte-pates h3, #carte-salades h3, #carte-desserts h3, #carte-boissons h3, #carte-cafes h3{
+		font-size: 1.9rem;
+		text-align: right;
+	}
+
+}

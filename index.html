@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past'a Mamma</title>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ca42bbbf84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="header-logo">
+			<!--Icône faite par monkik depuis www.flaticon.com-->
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik01MDMuNDY3LDQwOS42SDguNTMzYy00LjcxLDAtOC41MzMsMy44MTQtOC41MzMsOC41MzNDMCw0NjkuODg4LDQyLjExMiw1MTIsOTMuODY3LDUxMmgzMjQuMjY3DQoJCQlDNDY5Ljg4OCw1MTIsNTEyLDQ2OS44ODgsNTEyLDQxOC4xMzNDNTEyLDQxMy40MTQsNTA4LjE4Niw0MDkuNiw1MDMuNDY3LDQwOS42eiBNNDE4LjEzMyw0OTQuOTMzSDkzLjg2Nw0KCQkJYy0zOS40NjcsMC03Mi4wNzMtMjkuOTE4LTc2LjMzMS02OC4yNjdoNDc2LjkxOUM0OTAuMTk3LDQ2NS4wMTYsNDU3LjYsNDk0LjkzMyw0MTguMTMzLDQ5NC45MzN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNTYuMDA5LDI4MS42Yy0wLjA0MywwLTAuMDc3LDAtMC4xMTEsMGMtMzMuNjMsMC02NS45MjksMTIuMzgyLTkwLjkzMSwzNC44NzZsMTEuNDA5LDEyLjY4MQ0KCQkJYzIxLjg3MS0xOS42NjEsNTAuMTA4LTMwLjQ5LDc5LjUzMS0zMC40OWMwLjAyNiwwLDAuMDY4LDAsMC4wOTQsMGM0Ny4yOTIsMCw4Ny43MjMsMjQuNjk1LDEwMy4wMDYsNjIuODk5bDE1Ljg1NS02LjMzMg0KCQkJQzM1Ni45NjYsMzEwLjUwMiwzMTAuMzA2LDI4MS42LDI1Ni4wMDksMjgxLjZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zMjEuMjI5LDMzOS4yMzRjLTQzLjUzNy0zNS45NTEtMTA4LjIwMy0yOS43ODEtMTQ0LjE2MiwxMy43MzlsMTMuMTU4LDEwLjg2Mw0KCQkJYzI5Ljk2MS0zNi4yNjcsODMuODU3LTQxLjQyMSwxMjAuMTI0LTExLjQ1MmM1Ljg4OCw0Ljg3MywxMS4wOTMsMTAuNTA1LDE1LjQ3MSwxNi43MjVsMTMuOTc4LTkuODA1DQoJCQlDMzM0LjU0MSwzNTEuODM4LDMyOC4yOTQsMzQ1LjA4OCwzMjEuMjI5LDMzOS4yMzR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zMDMuNzc4LDM2OS4zNzRjLTI2Ljg5Ny0yNi4zNTktNzAuMTk1LTI1Ljg5OS05Ni41NDYsMC45NzNsMTIuMTk0LDExLjk0N2MxOS43NjMtMjAuMTU2LDUyLjI1LTIwLjQ4OSw3Mi40MDUtMC43NDINCgkJCWM5Ljc3MSw5LjU2NiwxNS4zNjksMjIuODk1LDE1LjM2OSwzNi41ODJoMTcuMDY3QzMyNC4yNjcsMzk5Ljg4OSwzMTYuOCwzODIuMTE0LDMwMy43NzgsMzY5LjM3NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM1MC4yNDIsMzE1LjczM2MtMC4xMjgsMC0wLjI0NywwLTAuMzc1LDBoLTguNTMzVjMzMi44aDguNTY3YzQ4LjQ0NCwwLjE4OCw4OS44MTMsMzcuNjMyLDkzLjg2Nyw4Ni4wNDJsMTYuOTk4LTEuNDE3DQoJCQlDNDU1Ljk5NiwzNjAuMzI5LDQwNy40NjcsMzE1LjczMywzNTAuMjQyLDMxNS43MzN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MDAuNzUxLDM2OS40NTFjLTE1LjI5Mi0xMy42Ny0zNS4wMDQtMjAuNTkxLTU1LjQ3NS0xOS40M2MtMjAuNDgsMS4xMzUtMzkuMjg3LDEwLjE4OS01Mi45NjYsMjUuNDcybDEyLjcxNSwxMS4zODMNCgkJCWMxMC42NDEtMTEuODg3LDI1LjI2Ny0xOC45MzUsNDEuMTk5LTE5LjgyM2MxNi4wMTctMC44MjgsMzEuMjQ5LDQuNDgsNDMuMTUzLDE1LjExM2MxMC43MjYsOS42LDE3LjYzLDIyLjc1LDE5LjQzOSwzNy4wNDMNCgkJCWwxNi45MzktMi4xNUM0MjMuNDI0LDM5OC42OTQsNDE0LjU0MSwzODEuNzgxLDQwMC43NTEsMzY5LjQ1MXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM2MC4wNjQsMzg1LjI2M2MtMjIuNzkzLTUuODU0LTQ2LjA3MSw3Ljk3LTUxLjkxNywzMC43NTRsMTYuNTM4LDQuMjMzYzMuNDk5LTEzLjY3LDE3LjQ3Ni0yMS45NTYsMzEuMTQ3LTE4LjQ0OQ0KCQkJYzkuMDU0LDIuMzEzLDE2LjEzNyw5LjM4NywxOC40NDksMTguNDQ5bDE2LjUzOC00LjIzM0MzODYuOTQ0LDQwMC45MTMsMzc1LjE2OCwzODkuMTI5LDM2MC4wNjQsMzg1LjI2M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTE3MC44NDYsMzE1LjkyMWMtMjkuNTM0LTIuNDA2LTU4LjI0LDYuODEtODAuODI4LDI1Ljk4NGMtMjIuNTk2LDE5LjE3NC0zNi4zNjksNDYuMDAzLTM4Ljc4NCw3NS41MjlsMTcuMDA3LDEuMzk5DQoJCQljMi4wMzktMjQuOTk0LDEzLjY5Ni00Ny42OTMsMzIuODExLTYzLjkwNmMxOS4xMjMtMTYuMjIyLDQzLjQwOS0yNC4wNDcsNjguNDAzLTIxLjk4MmMxMy44NjcsMS4xMjYsMjcuNTU0LDUuNDM2LDM5LjU4NiwxMi40NDINCgkJCWw4LjU5My0xNC43NTRDMjAzLjQwOSwzMjIuMzQ3LDE4Ny4yMywzMTcuMjYxLDE3MC44NDYsMzE1LjkyMXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTE3MS41MjksMzUwLjI1OWMtNDEuOTc1LTUuMTg4LTgwLjQ0NCwyNC43OTgtODUuNjE1LDY2LjgzM2wxNi45MzksMi4wODJjNC4wMTktMzIuNjkxLDMzLjg4Ni01NS45MjcsNjYuNTg2LTUxLjk4NQ0KCQkJYzI3LjI0NywzLjM2Miw0OC42MjMsMjQuNzM4LDUxLjk3Nyw1MS45ODVsMTYuOTU2LTIuMDgyQzIzNC4wNTIsMzgyLjA1NCwyMDYuNTY2LDM1NC41NjksMTcxLjUyOSwzNTAuMjU5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMTcyLjkxOSwzODUuNDc2Yy0xMS4wMTctMi44ODQtMjIuNTE5LTEuMjg5LTMyLjM1LDQuNDU0Yy05LjgzOSw1Ljc2LTE2Ljg0NSwxNS4wMS0xOS43MjEsMjYuMDM1bDE2LjUxMiw0LjMxOA0KCQkJYzEuNzMyLTYuNjEzLDUuOTM5LTEyLjE2OSwxMS44MzYtMTUuNjE2YzUuODk3LTMuNDU2LDEyLjgtNC40MDMsMTkuNDEzLTIuNjcxYzguOTQzLDIuMzM4LDE1Ljk1Nyw5LjM0NCwxOC4yOTUsMTguMjk1DQoJCQlsMTYuNTA0LTQuMzI2QzE5OS41MDksNDAxLjA1LDE4Ny44MjcsMzg5LjM2NywxNzIuOTE5LDM4NS40NzZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNTYsMzg0Yy0xOC44MjUsMC0zNC4xMzMsMTUuMzA5LTM0LjEzMywzNC4xMzNoMTcuMDY3YzAtOS40MTIsNy42NTQtMTcuMDY3LDE3LjA2Ny0xNy4wNjcNCgkJCWM5LjQxMiwwLDE3LjA2Nyw3LjY1NCwxNy4wNjcsMTcuMDY3aDE3LjA2N0MyOTAuMTMzLDM5OS4zMDksMjc0LjgyNSwzODQsMjU2LDM4NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHJlY3QgeD0iODUuMzMzIiB5PSIzNC4xMzMiIHdpZHRoPSI2OC4yNjciIGhlaWdodD0iMTcuMDY3Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxyZWN0IHg9IjEwMi40IiB5PSI2OC4yNjciIHdpZHRoPSI1MS4yIiBoZWlnaHQ9IjE3LjA2NyIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNjYuNTQzLDE4My41MDFjLTkuMDQ1LTE1LjgxMi05LjA0NS0zNS40NDcsMC01MS4yNmMxMi4wMzItMjEuMDM1LDEyLjAzMi00Ny4xNzIsMC02OC4yMDcNCgkJCWMtOS4wNDUtMTUuODEyLTkuMDQ1LTM1LjQ0NywwLTUxLjI2YzEuNTEtMi42NDUsMS41MDItNS44ODgtMC4wMjYtOC41MjVDNjQuOTksMS42MjEsNjIuMTc0LDAsNTkuMTM2LDBIMzQuMTMzdjE3LjA2N0g0Ni4wOA0KCQkJYy01LjkyMiwxOC4yMzYtNC4wNDUsMzguNDk0LDUuNjQ5LDU1LjQzM2M5LjA0NSwxNS44MTIsOS4wNDUsMzUuNDQ3LDAsNTEuMjZjLTEyLjAzMiwyMS4wMzUtMTIuMDMyLDQ3LjE3MiwwLDY4LjIwNw0KCQkJYzkuMDQ1LDE1LjgxMiw5LjA0NSwzNS40NDcsMCw1MS4yNmMtMTIuMDMyLDIxLjA0My0xMi4wMzIsNDcuMTcyLTAuMzUsNjcuNTI0YzIuNjExLDUuNyw0LjgyMSwxMS42MTQsNi41NzEsMTcuNTUzbDE2LjM2Ny00LjgyMQ0KCQkJYy0xLjk4LTYuNzI0LTQuNDgtMTMuMzg5LTcuNzc0LTIwLjUxNGMtOS4wNDUtMTUuODA0LTkuMDQ1LTM1LjQ1NiwwLTUxLjI2Qzc4LjU3NSwyMzAuNjczLDc4LjU3NSwyMDQuNTM1LDY2LjU0MywxODMuNTAxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTExLjk4Myw2Mi4yMDhjLTAuNy0yNC45NjktMjEuNTcyLTQ0LjUyNy00Ni41NjYtNDQuMDMybC0yNDguNjUzLDcuMzEzTDIwMy43NSwxMi40NzYNCgkJCUMxOTUuNjk1LDQuNDI5LDE4NC45ODYsMCwxNzMuNjExLDBjLTAuMDE3LDAtMC4wMzQsMC0wLjA0MywwSDk0LjQ2NGMtMy4wNjMsMC01Ljg4OCwxLjYzOC03LjQwNyw0LjI5Mg0KCQkJYy0xMi4wMzIsMjEuMDM1LTEyLjAzMiw0Ny4xNzIsMCw2OC4yMDdjOS4wNDUsMTUuODEyLDkuMDQ1LDM1LjQ0OCwwLDUxLjI2Yy0xMi4wMzIsMjEuMDM1LTEyLjAzMiw0Ny4xNzIsMCw2OC4yMDcNCgkJCWM5LjA0NSwxNS44MTIsOS4wNDUsMzUuNDQ3LDAsNTEuMjZjLTEyLjAzMiwyMS4wNDMtMTIuMDMyLDQ3LjE3MiwwLDY4LjIwN2MxLjE2OSwyLjA0OCwyLjE5Myw0LjE3MywzLjA3Miw2LjM2NmwxNS44MzgtNi4zNDkNCgkJCWMtMS4xNjEtMi45MS0yLjU0My01Ljc2OC00LjA5Ni04LjQ4MmMtOS4wNDUtMTUuODA0LTkuMDQ1LTM1LjQ1NiwwLTUxLjI2YzEyLjAzMi0yMS4wMzUsMTIuMDMyLTQ3LjE3MiwwLTY4LjIwNw0KCQkJYy05LjA0NS0xNS44MTItOS4wNDUtMzUuNDQ3LDAtNTEuMjZjMi4zMzgtNC4wOTYsNC4yMjQtOC4zNzEsNS42NDktMTIuNzc0aDY2LjAzOWMwLjAxNywwLDAuMDI2LDAsMC4wNDMsMA0KCQkJYzExLjM4MywwLDIyLjA5My00LjQzNywzMC4xNDgtMTIuNDg0bDEyLjkxMS0xMi45MTFsMjQ3LjM4MSwxNC41NDFjMC44ODcsMC4wNTEsMi4xMjUsMC4wMzQsMi42NDUsMC4wNzcNCgkJCWMyNC45NjksMCw0NS4yOTUtMjAuMzA5LDQ1LjMxMi00NS4yODZMNTExLjk4Myw2Mi4yMDh6IE00NjYuNjgsOTEuNjIyYy0wLjY1Ny0wLjE0NS0xLjA3NS0wLjAxNy0xLjYyMS0wLjA0M0wyMTMuODM3LDc2LjgxNw0KCQkJYy0yLjQzMi0wLjE3OS00LjgxMywwLjc1OS02LjUzNywyLjQ4M2wtMTUuNjE2LDE1LjYxNmMtNC44Myw0LjgyMS0xMS4yNDcsNy40ODQtMTguMDkxLDcuNDg0Yy0wLjAwOSwwLTAuMDE3LDAtMC4wMjYsMGgtNjIuODA1DQoJCQljMC44MTEtMTMuMTkzLTIuMTUtMjYuNTgxLTguODkyLTM4LjM3NGMtOC4yMzUtMTQuNDA0LTguOTY5LTMxLjk5MS0yLjE5My00Ni45NTloNzMuODk5YzAuMDA5LDAsMC4wMTcsMCwwLjAyNiwwDQoJCQljNi44MjcsMCwxMy4yNTIsMi42NjIsMTguMDgyLDcuNDkyTDIwNy4zLDQwLjE3NWMxLjY1NSwxLjY1NSwzLjk3NywyLjYyOCw2LjI4MSwyLjQ5MmwyNTIuMzIyLTcuNDMzDQoJCQljMTUuOTMyLTAuNDM1LDI4LjU3OCwxMS44ODcsMjkuMDMsMjguMTZDNDk0LjkxNiw3OC45NjcsNDgyLjI0NCw5MS42MjIsNDY2LjY4LDkxLjYyMnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTEzNS45OTYsMTgzLjUwMWMtOS4wNDUtMTUuODEyLTkuMDQ1LTM1LjQ0Ny0wLjAwOS01MS4yNTFjMy40MTMtNS45MzksNS45MDUtMTIuMzMxLDcuNDE1LTE5LjAwNGwtMTYuNjQ4LTMuNzYzDQoJCQljLTEuMTM1LDUuMDA5LTMuMDA0LDkuODEzLTUuNTcyLDE0LjI4NWMtMTIuMDMyLDIxLjAzNS0xMi4wMzIsNDcuMTcyLDAsNjguMjA3YzkuMDQ1LDE1LjgxMiw5LjA0NSwzNS40NTYtMC4wMDksNTEuMjc3DQoJCQljLTExLjEzNiwxOS41NTgtMTIuMDA2LDQzLjM3NS0yLjMzLDYzLjY5M2wxNS40MDMtNy4zM2MtNy4yODctMTUuMjkyLTYuNjIyLTMzLjIwMywxLjc0OS00Ny45MDYNCgkJCUMxNDguMDI4LDIzMC42NzMsMTQ4LjAyOCwyMDQuNTM2LDEzNS45OTYsMTgzLjUwMXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHJlY3QgeD0iMzQuMTMzIiB5PSIzNC4xMzMiIHdpZHRoPSIxNy4wNjciIGhlaWdodD0iMTcuMDY3Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxyZWN0IHg9IjM0LjEzMyIgeT0iNjguMjY3IiB3aWR0aD0iMjUuNiIgaGVpZ2h0PSIxNy4wNjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHJlY3QgeD0iMzQuMTMzIiB5PSIxMDIuNCIgd2lkdGg9IjM0LjEzMyIgaGVpZ2h0PSIxNy4wNjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" alt="Logo assiette de pâtes">
+            <h4>Past'a Mamma</h4>
+        </div>
+		<span></span>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#accueil" aria-label="Accueil"><i class="fas fa-home" aria-hidden="true"></i></a></li>
+                <li><a href="#carte">Notre Carte</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h1>Past'a Mamma</h1>
+        <h3>Sur Place - À Emporter</h3>
+        <div id="boutons-accueil">
+                <a href="#carte" class="bouton-accueil">Voir la carte</a>
+                <a href="#contact" class="bouton-accueil">Contact</a>
+        </div>
+        <a href="#carte" aria-label="Aller voir la carte" id="voir-carte"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+    </section>
+
+    <section id="carte">
+        <h3 class="carte-titre">Pâtes fraîches</h3>
+        <div id="carte-pates">
+            <ul class="carte-ul">
+                <li class="pates">
+                    <div class="item">
+						<h4>Tortellini alla crema</h4>
+						<p>Pâtes farcies au porc, crème, champignons, basilic, mozzarella</p>
+					</div>
+                    <h3>13€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Spaghetti alla carbonara</h4>
+                    	<p>Pancetta, parmesan, oeuf</p>
+					</div>
+                    <h3>13€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Spaghetti alla bolognese</h4>
+                    	<p>Boeuf haché, sauce tomate, oignons</p>
+					</div>
+                    <h3>13€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                   		<h4>Spaghetti alla marinara</h4>
+                   		<p>Sauce tomate, crevettes, moules, ail, persil</p>
+					</div>
+                    <h3>14€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Penne al pesto</h4>
+                    	<p>Pesto basilic, pignons de pin, parmesan et huile d'olive</p>
+					</div>
+                    <h3>13€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Penne All'arrabbiata</h4>
+                    	<p>Sauce tomate, piment, ail, basilic</p>
+					</div>
+                    <h3>13€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Rigatoni 4 Fromaggi</h4>
+                    	<p>Gorgonzola, mozzarella, parmesan, scarmoza provoletta, crème</p>
+					</div>
+                    <h3>14€</h3>
+                </li>
+                
+            </ul>
+            <ul class="carte-ul">
+                <li class="pates">
+					<div class="item">
+                    	<h4>Linguine al salmone</h4>
+                    	<p>Crème et saumon</p>
+					</div>
+                    <h3>15€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Gnocchi al Gorgonzola</h4>
+                    	<p>Gorgonzola, crème</p>
+					</div>
+                    <h3>15€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Gnocchi al salmone</h4>
+                    	<p>Saumon fumé, crème, tomate</p>
+					</div>
+                    <h3>15€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Gnocchi della mamma</h4>
+                    	<p>Sauce tomate, mozzarella, origan</p>
+					</div>
+                    <h3>14€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Lasagne alla bolognese</h4>
+                    	<p>Sauce tomate, mozzarella, béchamel, boeuf haché</p>
+					</div>
+                    <h3>15€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Lasagne al salmone</h4>
+                    	<p>Saumon, béchamel, mozzarella, épinards</p>
+					</div>
+                    <h3>16€</h3>
+                </li>
+                <li class="pates">
+					<div class="item">
+                    	<h4>Lasagne alla melanzane</h4>
+                    	<p>Sauce napolitaine, aubergine, béchamel, mozzarella, pecorino</p>
+					</div>
+                    <h3>15€</h3>
+                </li>
+            </ul>
+        </div>
+		       
+        <h3 class="carte-titre">Salades</h3>
+        <div id="carte-salades">
+            <ul class="carte-ul">
+                <li class="salade">
+                    <h4 class="item">Salade verte</h4>
+                    <h3>5€</h3>
+                </li>
+                <li class="salade">
+                    <div>
+						<h4 class="item">Salade Mozzarella</h4>
+                    	<p>Salade, tomates, mozzarella</p>
+					</div>
+                    <h3>9€</h3>
+                </li>
+				
+            </ul>
+            <ul class="carte-ul">
+                <li class="salade">
+                    <h4 class="item">Salade Mixte</h4>
+                    <h3>8€</h3>
+                </li>
+                <li class="salade">
+                    <div class="item">
+						<h4>Salade Landaise</h4>
+                   	 	<p>Salade, tomates, gésiers, magret, maïs, asperges, croûtons</p>
+					</div>
+                    <h3>12€</h3>
+                </li>
+            </ul>
+        </div>
+		
+        <h3 class="carte-titre">Desserts</h3>
+        <div id="carte-desserts">
+            <ul class="carte-ul">
+                <li class="dessert">
+                    <h4 class="item">Tiramisu Maison</h4>
+                    <h3>6€</h3>
+                </li>
+                <li class="dessert">
+                    <h4 class="item">Panna Cotta Maison</h4>
+                    <h3>6€</h3>
+                </li>
+                <li class="dessert">
+                    <h4 class="item">Crème brûlé</h4>
+                    <h3>6€</h3>
+                </li>
+                <li class="dessert">
+                    <div class="item">
+						<h4>Glace à l'italienne</h4>
+                    	<p>Vanille, fraise, chocolat</p>
+					</div>
+                    <h3>4€</h3>
+                </li>
+            </ul>
+            <ul class="carte-ul">
+                <li class="dessert">
+					<div class="item">
+	                    <h4>Coupe 2 boules chantilly</h4>
+    	                <p>Vanille, fraise, chocolat, menthe</p>
+					</div>
+                    <h3>4€</h3>
+                </li>
+                <li class="dessert">
+                    <h4 class="item">Mousse au chocolat</h4>
+                    <h3>4€</h3>
+                </li>
+                <li class="dessert">
+                    <h4 class="item">Moelleux au chocolat</h4>
+                    <h3>4€</h3>
+                </li>
+                <li class="dessert">
+                    <h4 class="item">Salade de fruits</h4>
+                    <h3>4€</h3>
+                </li>
+            </ul>
+        </div>
+		
+        <h3 class="carte-titre">Boissons</h3>
+        <div id="carte-boissons">
+            <ul class="carte-ul">
+                <li class="boisson">
+					<div class="item">
+	                    <h4>Jus de Fruits</h4>
+    	                <p>Orange, Ananas, Raisin, Multifruits, Pomme</p>
+        			</div>
+					<h3>2,50€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Coca-Cola, Coca Zéro, Coca Light</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Orangina - Schweppes - Sprite</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Ice Tea Pêche</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Perrier, San Pellegrino</h4>
+                    <h3>3€</h3>
+                </li>
+            </ul>
+            <ul class="carte-ul">
+                <li class="boisson">
+                    <h4 class="item">Verre de rosé</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Verre de rouge</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Verre de sangria</h4>
+                   <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <div class="item">
+						<h4>Bière</h4>
+              			<p>Leffe, Hoegaarden, Pelforth</p>
+					</div>
+                    <h3>3€</h3>
+                </li>
+                <li class="boisson">
+                    <h4 class="item">Mojito</h4>
+                    <h3>6€</h3>
+                </li>
+            </ul>
+        </div> 
+		
+        <h3 class="carte-titre">Cafés et infusions</h3>
+        <div id="carte-cafes">
+            <ul class="carte-ul">
+                <li class="cafe">
+                    <h4 class="item">Café, décaféiné, expresso</h4>
+                    <h3>2,50€</h3>
+                </li>
+                <li class="cafe">
+                    <h4 class="item">Grand café, Cappucino</h4>
+                    <h3>3€</h3>
+                </li>
+            </ul>
+            <ul class="carte-ul">
+                <li class="cafe">
+                    <h4 class="item">Thé, infusion</h4>
+                    <h3>3€</h3>
+                </li>
+                <li class="cafe">
+                    <h4 class="item">Chocolat chaud</h4>
+                    <h3>3,50€</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact">
+		<address>
+			<h3>Past'a Mamma</h3>
+			<p>1, route Fictive</p>
+			<p>40530 LABENNE</p>
+			<p>05 59 45 OO OO</p>
+		</address>
+		<div id="horaires">
+			<h3>Horaires</h3>
+			<p>Mardi - Dimanche</p>
+			<p>11h30 - 14h30</p>
+			<p>18h30 - 00h</p>
+		</div>
+		<div id="reseaux-sociaux">
+			<a href="www.facebook.com" aria-label="Lien vers notre page Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+			<a href="www.instagram.com" aria-label="Lien vers notre profil Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="www.twitter.com" aria-label="Lien vers notre profil Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+			<a href="www.pinterest.com" aria-label="Lien vers notre page Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+		</div>
+		<form action="#" id="newsletter">
+			<p>Pour suivre notre actualité et connaître avant tout le monde nos nouveaux plats,</p>
+			<p>inscrivez-vous à notre newsletter !</p>
+			<div id="form-input">
+				<input type="email" placeholder="Votre email">
+				<button type="button">S'inscrire</button>
+			</div>
+		</form>
+	</footer>
+</body>
+
+</html>
