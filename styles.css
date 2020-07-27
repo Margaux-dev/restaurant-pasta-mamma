@@ -17,18 +17,32 @@ html{
 body{
 	margin-top: 80px;
 	font-family: 'Recursive', sans-serif;
-	background-image: url("https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	z-index: 0;
 }
 
 body::before{
 	content: "";
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	background-image: url("https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -10;	
+}
+
+body::after{
+	content: "";
 	width: 100%;
 	height: calc(100vh - 80px);
 	position: absolute;
+	top: 80px;
 	background-color: rgba(176,127,80,0.30);
 }
 
